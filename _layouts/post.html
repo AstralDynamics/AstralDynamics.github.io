@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post__header">
+    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post__meta">
+      <time class='post__meta__date' datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if page.author %}
+        {% assign author = site.team[page.author] %}
+        by
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <a class='post__meta__author' href='/team/#{{ page.author }}' itemprop="name">{{ author.display_name }}</a>
+        </span>
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class='post__footer'>
+    {% include disqus.html %}
+  </footer>
+
+</article>

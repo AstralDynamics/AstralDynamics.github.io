@@ -1,0 +1,58 @@
+code {
+  @include code;
+  padding: 0 $tiny-space;
+}
+
+.highlight {
+  @include code;
+  padding: 0 $medium-space;
+  margin: $medium-space 0;
+
+  code {
+    padding: 0;
+    border: 0;
+  }
+}
+
+blockquote {
+  background: #eee;
+  border-left: dashed 3px $ghost-grey;
+  padding: $medium-space;
+  color: $slate-blue;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footnotes {
+  margin-top: $large-space;
+  border-top: dashed 2px $ghost-grey;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody, td {
+  border: solid 1px $ghost-grey;
+}
+
+thead, th {
+  border: solid 1px $slate-blue;
+  background: $slate-blue;
+  color: $ghost-grey;
+}
+
+th, td {
+  padding: $small-space;
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    font-style: italic;
+  }
+}

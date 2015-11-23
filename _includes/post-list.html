@@ -1,0 +1,15 @@
+<ul class='posts-list'>
+  {% for post in site.posts %}
+    <li class='posts-list__post'>
+      <a href='{{ post.url }}'>
+        <span class='posts-list__post__date'>{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class='posts-list__post__title'>{{ post.title }}</span>
+      </a>
+      {% if post.author %}
+        {% assign author = site.team[post.author] %}
+        <span>by</span>
+        <a href='/team/#{{post.author}}' class='posts-list__post__author'>{{ author.display_name }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

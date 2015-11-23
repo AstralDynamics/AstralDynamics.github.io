@@ -1,0 +1,68 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Astral Dynamics
+email: contact@astraldynamics.co.uk
+description: >
+  We are a forward thinking tech company with a focus on enhancing culture
+  with technology.
+baseurl: ""
+url: "http://astraldynamics.co.uk"
+license: MIT
+license_url: "https://opensource.org/licenses/MIT"
+disqus_url: "astraldynamics.disqus.com"
+twitter_username: theastralship
+github_username: AstralDynamics
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Team
+team:
+  liam:
+    name: Liam Kurmos
+    display_name: Liam
+    role: Managing Director
+    image: https://qph.is.quoracdn.net/main-thumb-68735281-200-iimosxternqxgbquvcouvfjrblvlppyz.jpeg
+    twitter: liamkurmos
+    bio: >
+      Lorem ipsum dolor sit amet, ius dicam mucius at, sea dicam possim
+      dissentiet et, meis zril et nam. Quo inciderint definitiones te, at mazim
+      discere dissentiet vis. Usu ut ridens honestatis, cu euismod eligendi
+      scriptorem vix.
+
+  dan:
+    name: Dan Prince
+    display_name: Dan
+    role: Developer
+    image: https://pbs.twimg.com/profile_images/652160984312889348/omQLcdYY_400x400.jpg
+    web: http://danthedev.com
+    twitter: workshydev
+    github: danprince
+    bio: >
+      Sit ocurreret consectetuer ex, duis maiorum patrioque ad pro,
+      duo an saepe aliquam sensibus. Brute alterum appellantur ad usu,
+      qui vidit tempor cotidieque at. Ei eros vidit ullamcorper usu,
+      ad quo brute fabulas tractatos.
+
+  rishabh:
+    name: Rishabh Jain
+    display_name: Rishabh
+    role: Developer
+    image: https://avatars1.githubusercontent.com/u/2570363?v=3&s=460
+    github: rishabhjain
+    bio: >
+      Odio euismod vix ea, delectus pertinacia no eam. Cum hinc animal
+      habemus ea, suscipit reprimique mea at. Pro no nibh philosophia,
+      eros duis has ea. Ad pri decore ceteros ocurreret, at quod utinam
+      blandit vim.
+
+# Build settings
+markdown: kramdown
+

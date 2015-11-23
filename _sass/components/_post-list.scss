@@ -1,0 +1,23 @@
+.posts-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.posts-list__post {
+  color: $slate-blue;
+}
+
+.posts-list__post a {
+  text-decoration: none;
+}
+
+.posts-list__post__date {
+  font-weight: bold;
+  color: $stone-black;
+}
+
+.posts-list__post__title {
+  text-decoration: none;
+}
+

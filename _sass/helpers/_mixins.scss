@@ -1,0 +1,39 @@
+@mixin site-width {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+@mixin column($width, $gutter:0) {
+  float: left;
+  padding: 0 $gutter;
+  width: $width;
+}
+
+@mixin responsive-grid($divisions, $gutter:0) {
+
+  .grid {
+    overflow: hidden;
+  }
+
+  @for $i from 0 through $divisions {
+    .column-#{$i} {
+      $width: ($i / $divisions) * 100%;
+      @include column($width, $gutter);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .column {
+      width: auto;
+      float: none;
+    }
+  }
+
+}
+
+@mixin code {
+  background: #eee;
+  border: dashed 1px $ghost-grey;
+}
+

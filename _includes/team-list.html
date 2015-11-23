@@ -1,0 +1,37 @@
+<div class='team-list'>
+
+{% for row in site.team %}
+  {% assign name = row[0] %}
+  {% assign your = row[1] %}
+
+  <section class='team-list__item grid'>
+    <div class='column column-4'>
+      <img src='{{your.image}}' width="200px" height="200px" />
+    </div>
+    <div class='column column-8'>
+      <a name='{{name}}'>
+        <h3 class='team-list__item__name'>{{your.name}}</h3>
+      </a>
+      <div class='team-list__item__role'>{{your.role}}</div>
+      <div class='team-list__item__social'>
+        {% if your.web %}
+          <a href='{{your.web}}'>Website</a>
+        {% endif %}
+
+        {% if your.github %}
+          <a href='https://github.com/{{your.github}}'>GitHub</a>
+        {% endif %}
+
+        {% if your.twitter %}
+          <a href='https://github.com/{{your.twitter}}'>Twitter</a>
+        {% endif %}
+      </div>
+      <p class='team-list__item__bio'>{{your.bio}}</p>
+    </div>
+  </section>
+{% endfor %}
+
+</div>
+
+
+

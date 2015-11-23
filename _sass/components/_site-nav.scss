@@ -1,0 +1,30 @@
+.site__nav {
+  @include site-width;
+  text-align: left;
+  padding: $medium-space $small-space;
+  height: 3em;
+  overflow: hidden;
+}
+
+.site__nav__link,
+.site__nav__link--current {
+  transition-duration: 1s;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $stone-black;
+  border-bottom: solid 2px $ghost-grey;
+  padding-bottom: 2em;
+
+  &:hover {
+    transition-duration: .3s;
+    padding-bottom: .2em;
+    color: $slate-blue;
+  }
+}
+
+.site__nav__link--current {
+  height: auto;
+  border-bottom: solid 2px $slate-blue;
+  padding-bottom: .2em;
+}

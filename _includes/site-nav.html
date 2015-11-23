@@ -1,0 +1,22 @@
+<nav class='site__nav'>
+  {% assign current_page = page %}
+
+  {% if page.url == "/" %}
+  <a class='site__nav__link--current' href='/'>Blog</a>
+  {% else %}
+  <a class='site__nav__link' href='/'>Blog</a>
+  {% endif %}
+
+  {% for page in site.pages %}
+    {% unless page.hidden %}
+      {% if page.title %}
+        {% if page.url == current_page.url %}
+        <a class='site__nav__link--current' href='{{ page.url }}'>{{page.title}}</a>
+        {% else %}
+        <a class='site__nav__link' href='{{ page.url }}'>{{page.title}}</a>
+        {% endif %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</nav>
+
