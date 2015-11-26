@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+is_nav: true
 permalink: /about/
 ---
 

@@ -2,7 +2,9 @@
   {% for project in site.projects %}
     <article class='project-list__item grid'>
       <div class='column column-4'>
-        <img class='project-list__item__image' src='{{ project.image }}' />
+        <a href='{{ project.url }}'>
+          <img class='project-list__item__image' src='{{ project.image }}' />
+        </a>
       </div>
       <div class='column column-8'>
         <h3 class='project-list__item__title'>{{ project.title }}</h3>
