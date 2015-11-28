@@ -1,16 +1,18 @@
 <div class='project-list'>
   {% for project in site.projects %}
-    <article class='project-list__item grid'>
-      <div class='column column-4'>
-        <a href='{{ project.url }}'>
-          <img class='project-list__item__image' src='{{ project.image }}' />
-        </a>
-      </div>
-      <div class='column column-8'>
-        <h3 class='project-list__item__title'>{{ project.title }}</h3>
-        <p class='project-list__item__description--brief'>{{ project.description}}</p>
-        <a href='{{ project.url }}'>Find out more...</a>
-      </div>
-    </article>
+    {% if project.published %}
+      <article class='project-list__item grid'>
+        <div class='column column-4'>
+          <a href='{{ project.url }}'>
+            <img class='project-list__item__image' src='{{ project.image }}' />
+          </a>
+        </div>
+        <div class='column column-8'>
+          <h3 class='project-list__item__title'>{{ project.title }}</h3>
+          <p class='project-list__item__description--brief'>{{ project.description}}</p>
+          <a href='{{ project.url }}'>Find out more...</a>
+        </div>
+      </article>
+    {% endif %}
   {% endfor %}
 </div>
