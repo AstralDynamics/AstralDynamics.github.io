@@ -5,6 +5,7 @@ is_nav: true
 permalink: /about/
 ---
 
+
 Astral Dynamics is a forward thinking tech startup with a focus on improving and enhancing culture.
 
 We're normally UK based, with our offices in North Wales, but this year we decided to take our company out on the road in Asia --- read more about our adventure [here][1].
