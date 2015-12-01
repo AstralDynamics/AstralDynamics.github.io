@@ -12,10 +12,11 @@ description: >
   We are a forward thinking tech company with a focus on enhancing culture
   with technology.
 baseurl: ""
-url: "http://astraldynamics.co.uk"
+url: http://astraldynamics.co.uk
 license: MIT
-license_url: "https://opensource.org/licenses/MIT"
-disqus_url: "astraldynamics.disqus.com"
+license_url: https://opensource.org/licenses/MIT
+disqus_url: astraldynamics.disqus.com
+analytics_id: UA-43060379-1
 twitter_username: theastralship
 github_username: AstralDynamics
 collections:
