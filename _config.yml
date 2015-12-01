@@ -29,27 +29,35 @@ team:
     name: Liam Kurmos
     display_name: Liam
     role: Managing Director
-    image: https://qph.is.quoracdn.net/main-thumb-68735281-200-iimosxternqxgbquvcouvfjrblvlppyz.jpeg
+    image: http://i.imgur.com/cbPUOWM.jpg?1
     twitter: liamkurmos
     bio: >
-      Lorem ipsum dolor sit amet, ius dicam mucius at, sea dicam possim
-      dissentiet et, meis zril et nam. Quo inciderint definitiones te, at mazim
-      discere dissentiet vis. Usu ut ridens honestatis, cu euismod eligendi
-      scriptorem vix.
+      AD is not a conventional company and Liam is not a conventional director.
+      His role is largely as a facilitator and an innovator - helping everyone
+      on the team get what they need and ensuring everyone is able to work
+      together effectively. Externally he represents the company and manages
+      relationships with out clients and partners.
+
+      Outside or work Liam loves travelling and exploring new cultures. Ever
+      an optimist whilst he tackles societal and environmental challenges and
+      does whatever he can to improve the big picture.
 
   dan:
     name: Dan Prince
     display_name: Dan
     role: Developer
-    image: https://pbs.twimg.com/profile_images/652160984312889348/omQLcdYY_400x400.jpg
+    image: http://i.imgur.com/q1EsUYL.jpg?1
     web: http://danthedev.com
     twitter: workshydev
     github: danprince
     bio: >
-      Sit ocurreret consectetuer ex, duis maiorum patrioque ad pro,
-      duo an saepe aliquam sensibus. Brute alterum appellantur ad usu,
-      qui vidit tempor cotidieque at. Ei eros vidit ullamcorper usu,
-      ad quo brute fabulas tractatos.
+      Dan has been with Astral Dynamics from the beginning, when he met Liam
+      at University. Since then, he's worked around his studies to become the
+      software development backbone that we've come to depend on for many of
+      our projects.
+
+      When he's not working at a computer, Dan is a keen musician and can often
+      be found with one of his guitar or working on his home recording studio.
 
   rishabh:
     name: Rishabh Jain
@@ -58,10 +66,10 @@ team:
     image: https://avatars1.githubusercontent.com/u/2570363?v=3&s=460
     github: rishabhjain
     bio: >
-      Odio euismod vix ea, delectus pertinacia no eam. Cum hinc animal
-      habemus ea, suscipit reprimique mea at. Pro no nibh philosophia,
-      eros duis has ea. Ad pri decore ceteros ocurreret, at quod utinam
-      blandit vim.
+      Rishabh is the latest addition to our team. He's joined us full time
+      after an initial period working remotely from India. His knowledge
+      of machine learning has already proved to be a great addition to the
+      team.
 
 # Build settings
 markdown: kramdown
