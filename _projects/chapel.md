@@ -12,7 +12,7 @@ description: >
 
 Nestled in the hills of Snowdonia, at the foot of mount Elidir, can 
 be found a beautiful Welsh Chapel. Here in this ancient Brythonic 
-land which so inspired J.R. Tolkien tolkien, the Astral team works 
+land which so inspired J.R.R. Tolkien, the our team works 
 and weaves our deep magic of technology, innovation, culture and 
 creativity. 
 
