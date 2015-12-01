@@ -36,11 +36,11 @@ team:
       His role is largely as a facilitator and an innovator - helping everyone
       on the team get what they need and ensuring everyone is able to work
       together effectively. Externally he represents the company and manages
-      relationships with out clients and partners.
+      relationships with our clients and partners.
 
-      Outside or work Liam loves travelling and exploring new cultures. Ever
-      an optimist whilst he tackles societal and environmental challenges and
-      does whatever he can to improve the big picture.
+      Outside of work Liam loves travelling and exploring new cultures. With
+      an optimistic approach he tackles societal and environmental challenges
+      and does whatever he can to improve the big picture.
 
   dan:
     name: Dan Prince
@@ -51,13 +51,13 @@ team:
     twitter: workshydev
     github: danprince
     bio: >
-      Dan has been with Astral Dynamics from the beginning, when he met Liam
+      Dan has been with Astral Dynamics from the beginning - since he met Liam
       at University. Since then, he's worked around his studies to become the
       software development backbone that we've come to depend on for many of
       our projects.
 
       When he's not working at a computer, Dan is a keen musician and can often
-      be found with one of his guitars or working on his home recording studio.
+      be found with one of his guitars or tweaking his home recording studio.
 
   rishabh:
     name: Rishabh Jain
@@ -68,7 +68,7 @@ team:
     bio: >
       Rishabh is the latest addition to our team. He's joined us full time
       after an initial period working remotely from India. His knowledge
-      of machine learning has already proved to be a great addition to the
+      of machine learning has already proved to be a great addition to our
       team.
 
 # Build settings
