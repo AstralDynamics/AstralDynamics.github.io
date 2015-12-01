@@ -1,7 +1,7 @@
 .site__nav {
   @include site-width;
   text-align: left;
-  padding: $medium-space $small-space;
+  padding: $medium-space;
   height: 3em;
   overflow: hidden;
 }
@@ -15,10 +15,11 @@
   color: $stone-black;
   border-bottom: solid 2px $ghost-grey;
   padding-bottom: 2em;
+  margin-right: $small-space;
 
   &:hover {
     transition-duration: .3s;
-    padding-bottom: .2em;
+    padding-bottom: 0;
     color: $slate-blue;
   }
 }
@@ -26,5 +27,5 @@
 .site__nav__link--current {
   height: auto;
   border-bottom: solid 2px $slate-blue;
-  padding-bottom: .2em;
+  padding-bottom: 0;
 }
