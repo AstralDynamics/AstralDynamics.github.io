@@ -44,22 +44,6 @@ team:
       an optimistic approach he tackles societal and environmental challenges
       and does whatever he can to improve the big picture.
 
-  dan:
-    name: Dan Prince
-    display_name: Dan
-    role: Developer
-    image: http://i.imgur.com/q1EsUYL.jpg?1
-    web: http://danthedev.com
-    twitter: workshydev
-    github: danprince
-    bio: >
-      Dan has been with Astral Dynamics from the beginning - since he met Liam
-      at University. He's worked around his studies to become the development
-      backbone that we've come to depend on for many of our projects.
-
-      When he's not working at a computer, Dan is a keen musician and can often
-      be found with one of his guitars or tweaking his home recording studio.
-
   rishabh:
     name: Rishabh Jain
     display_name: Rishabh
