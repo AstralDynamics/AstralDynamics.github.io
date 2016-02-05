@@ -1,7 +1,20 @@
-<header class='site__header'>
-
-  {% include site-nav.html %}
-
-  <img class='site__logo' src='/assets/logo-blue-64.png' />
-  <h1 class='site__title'>Astral Dynamics</h1>
+<header class="site-header" role="banner">
+  <div class="left">
+    <a href="/" class="anchor--unstyled">
+      <img src="/assets/img/logo.svg"
+           class="site-header__logo"
+           width="26px"
+           alt="Astral Dynamics Logo"/>
+      <h3 class="site-header__title">
+        {{ site.title }}
+      </h3>
+    </a>
+  </div>
+  <div class="right">
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/team">Team</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </div>
 </header>

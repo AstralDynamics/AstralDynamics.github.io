@@ -1,17 +1,20 @@
-<ul class='posts-list'>
+<section class="post-list">
+  <br />
   {% for post in site.posts %}
-    {% if post.published %}
-      <li class='posts-list__post'>
-        <a href='{{ post.url }}'>
-          <span class='posts-list__post__date'>{{ post.date | date: "%b %d, %Y" }}</span>
-          <span class='posts-list__post__title'>{{ post.title }}</span>
-        </a>
-        {% if post.author %}
-          {% assign author = site.team[post.author] %}
-          <span>by</span>
-          <a href='/team/#{{post.author}}' class='posts-list__post__author'>{{ author.display_name }}</a>
-        {% endif %}
-      </li>
-    {% endif %}
+    <div class="post-preview">
+      <a href="{{ post.url }}" class="anchor--unstyled">
+        <h2 class="post-preview__title">{{ post.title }}</h2>
+      </a>
+      <section class="post-preview__meta">
+        {% include post-meta.html post=post %}
+      </section>
+      <p>
+        {{ post.content | strip_html | truncatewords:45 }}
+      </p>
+      <a href="{{ post.url }}">
+        <strong>Read Post &raquo;</strong>
+      </a>
+    </div>
+    <hr />
   {% endfor %}
-</ul>
+</section>

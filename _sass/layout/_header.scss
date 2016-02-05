@@ -1,9 +1,20 @@
-.site__header {
-  text-align: center;
-  margin-bottom: $medium-space;
+.site-header {
+  min-height: 3em;
+  line-height: 3em;
+  padding: 0 .8em;
+  overflow: hidden;
 }
 
-.site__title {
-  margin: 0;
+.site-header .left {
+  float: left;
+}
+
+.site-header .right {
+  float: right;
+}
+
+.site-header__title {
+  display: inline-block;
+  margin-left: 4px;
 }
 

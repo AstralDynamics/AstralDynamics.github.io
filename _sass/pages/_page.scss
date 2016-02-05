@@ -1,0 +1,22 @@
+.page {
+  @include site-width;
+}
+
+.page__header {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.page__image {
+  @include circle(4em);
+}
+
+.page__footer {
+  margin: 0 .6em;
+  text-align: center;
+}
+
+.page__footer p {
+  max-width: 400px;
+  margin: 1em auto;
+}

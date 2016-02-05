@@ -1,5 +1,3 @@
 .site__content {
   @include site-width;
-  border-bottom: dashed 2px $ghost-grey;
-  padding: $medium-space;
 }

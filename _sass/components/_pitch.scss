@@ -1,0 +1,61 @@
+.pitch {
+  min-height: 300px;
+  text-align: center;
+  padding: 5em 0;
+}
+
+.pitch--alt {
+  background: $palette-one;
+  color: $white;
+
+  h1, h2, h3 {
+    color: $white;
+  }
+}
+
+.pitch--hero {
+  min-height: 320px;
+  padding: 6em 0;
+  background: $palette-one;
+  color: $white;
+  position: relative;
+  background-image: url(/assets/img/chapel.jpg);
+  background-attachment: fixed;
+  background-position: center top;
+
+  .pitch__content {
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    color: $white;
+  }
+
+  * {
+    position: relative;
+    z-index: 10;
+  }
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparentize($palette-one, .1);
+
+    z-index: 5;
+  }
+}
+
+.pitch__content {
+  @include site-width;
+  padding: 0 .6em;
+  text-align: left;
+  font-size: $text-medium;
+
+  p {
+    margin-top: .25em;
+  }
+}

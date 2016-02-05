@@ -1,23 +1,19 @@
-.posts-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
+.post-list {
+  font-family: $sans-font;
 }
 
-.posts-list__post {
-  color: $slate-blue;
+.post-preview {
+
 }
 
-.posts-list__post a {
-  text-decoration: none;
+.post-preview__title {
+
+  &:hover {
+    color: $medium-grey;
+  }
 }
 
-.posts-list__post__date {
-  font-weight: bold;
-  color: $stone-black;
+.post-meta {
+  font-size: $text-medium;
+  word-spacing: 2pt;
 }
-
-.posts-list__post__title {
-  text-decoration: none;
-}
-

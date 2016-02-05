@@ -1,0 +1,29 @@
+---
+layout: default
+permalink: /404.html
+---
+
+<center>
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+  <br>
+  <canvas id='@' style='border: solid 3px'></canvas>
+  <pre id='*' class='highlight'></pre>
+  <script id='$'>
+/* Hand Golfed by Astral Dynamics */
+_=[],W=600,H=400,M=Math,R=M.random,B=R()*360,
+D=document,E=D.getElementById.bind(D)
+for(i=0;i<60;i++){s=3+R()*5;r=R()*60;p=[]
+for(j=0;j<s;j++){a=j/s*2*M.PI;p.push([r*M.cos(a),r*M.sin(a)])}
+_.push({x:R()*W,y:R()*H,i:R()-.5,j:R()-.5,t:(R()-.5)/60,p:p,h:B+R()*40,r:0})}
+onload=function(){with(E('@')){width=W;height=H;c=getContext('2d')}
+setInterval(function(){for(i in _){with(c){
+$=_[i];save();translate($.x,$.y);rotate($.r);beginPath()
+moveTo.apply(c,$.p[0]);for(j in $.p)lineTo.apply(c,$.p[j])
+lineWidth=5;strokeStyle='hsla('+$.h+',60%,60%,0.3)'
+closePath();stroke();restore();$.x+=$.i;$.y+=$.j;$.r+=$.t
+if($.x<=0||$.x>=W)$.i*=-1;if($.y<=0||$.y>=H)$.j*=-1}}},10)
+E('*').innerText=E('$').innerText}
+  </script>
+</center>
+

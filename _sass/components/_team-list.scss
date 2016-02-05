@@ -1,20 +1,23 @@
 .team-list {
-  margin-top: $huge-space;
+  margin: 1em 0;
 }
 
-.team-list__item {
-  margin-bottom: $huge-space;
+.team-member {
+  padding: 1em;
 }
 
-.team-list__item__name {
-  color: $stone-black;
+.team-member__header {
+  text-align: center;
 }
 
-.team-list__item__role {
-  color: $slate-blue;
-  font-weight: bold;
+.team-member__thumbnail {
+  @include circle(6em);
 }
 
-.team-list__item__bio {
-
+.team-member__role {
+  font-size: $text-small;
 }
+
+.team-member__bio {
+}
+

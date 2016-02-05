@@ -1,4 +1,17 @@
-.site__footer {
-  margin: $large-space 0;
-  text-align: center;
+body {
+  margin: 0 0 $footer-height;
+  padding-bottom: 4em;
 }
+
+.site-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: $footer-height;
+  width: 100%;
+  background: $light-grey;
+  color: $medium-grey;
+  text-align: center;
+  padding: 2.5em 1em;
+}
+

@@ -1,30 +1,39 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post__header">
-    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post__meta">
-      <time class='post__meta__date' datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </time>
-      {% if page.author %}
-        {% assign author = site.team[page.author] %}
-        by
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a class='post__meta__author' href='/team/#{{ page.author }}' itemprop="name">{{ author.display_name }}</a>
-        </span>
+<article class="page">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@theastralship" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:25 }}" />
+  <meta name="twitter:image" content="{{ page.image }}" />
+
+  <header class="page__header">
+    {% if page.image %}
+      <img class="page__image" src="{{ page.image }}" alt="Title image" />
+    {% else %}
+      {% if page.author and site.team[page.author] and site.team[page.author].image %}
+        <img class="page__image" src="{{ site.team[page.author].image }}"/>
+      {% else %}
+        <div class="page__image"></div>
       {% endif %}
-    </p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% include post-meta.html post=page %}
   </header>
-
-  <div class="post-content" itemprop="articleBody">
+  <section class="page__content writing">
     {{ content }}
-  </div>
-
-  <footer class='post__footer'>
-    {% include disqus.html %}
+  </section>
+  <footer class="page__footer">
+    <hr />
+    {% if page.author %}
+      {% assign author = site.team[post.author] %}
+      {% if page.author and site.team[page.author] and site.team[page.author].image %}
+        <img class="page__image" src="{{ site.team[page.author].image }}"/>
+      {% endif %}
+      <h3>{{ author.name }}</h3>
+      <p>{{ author.bio }}</p>
+    {% endif %}
   </footer>
-
 </article>

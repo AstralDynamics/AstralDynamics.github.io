@@ -1,0 +1,23 @@
+---
+layout: page
+title: Jobs
+permalink: /jobs
+---
+
+<section class='job-list grid'>
+  {% for job in site.jobs %}
+    <div class='column column--6'>
+    <h3>{{ job.title }}</h3>
+    <h6>{{ job.type }}</h6>
+    <p>{{ job.intro }}</p>
+    <a href='{{ job.url }}' class='btn btn--small btn--blue'>Learn more</a>
+    <hr />
+    </div>
+  {% endfor %}
+</section>
+
+<p>
+Not a developer? We're happy to integrate anyone with the right ethos, if you think you'd be a good fit for our team, then please get in touch.
+</p>
+<button class='btn btn--small btn--green'>Email Us</button>
+

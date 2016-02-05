@@ -8,54 +8,51 @@
 # Site settings
 title: Astral Dynamics
 email: contact@astraldynamics.co.uk
-description: >
-  We are a forward thinking tech company with a focus on enhancing culture
-  with technology.
+description: Creative Technology
 baseurl: ""
 url: http://astraldynamics.co.uk
-license: MIT
-license_url: https://opensource.org/licenses/MIT
-disqus_url: astraldynamics.disqus.com
-analytics_id: UA-43060379-1
-twitter_username: theastralship
-github_username: AstralDynamics
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
+theme_color: "#1b1b1b"
+markdown: kramdown
+sass:
+  style: compressed
 
 # Team
 team:
   liam:
     name: Liam Kurmos
     display_name: Liam
-    role: Managing Director
+    role: CEO / Founder
     image: http://i.imgur.com/cbPUOWM.jpg?1
     twitter: liamkurmos
     linkedin: https://uk.linkedin.com/in/liamkurmos 
     bio: >
-      AD is not a conventional company and Liam is not a conventional director.
-      His role is largely as a facilitator and an innovator - helping everyone
-      on the team get what they need and ensuring everyone is able to work
-      together effectively. Externally he represents the company and manages
-      relationships with our clients and partners.
+      Liam is the founder and visionary of Astral Dynamics. Outside of work
+      he loves tackling societal and environmental challenges; doing whatever
+      he can to improve the big picture.
 
-      Outside of work Liam loves travelling and exploring new cultures. With
-      an optimistic approach he tackles societal and environmental challenges
-      and does whatever he can to improve the big picture.
+  dan:
+    name: Dan Prince
+    display_name: Dan
+    role: CTO / Founder
+    image: http://i.imgur.com/q1EsUYL.jpg?1
+    twitter: workshydev
+    bio: >
+      Dan is a creative fullstack engineer and a co-founder of Astral Dynamics.
+      When he's not at a computer you're likely to find him playing guitar,
+      juggling or riding a longboard.
 
   rishabh:
     name: Rishabh Jain
     display_name: Rishabh
     role: Developer
-    image: https://avatars1.githubusercontent.com/u/2570363?v=3&s=460
     github: rishabhjain
     bio: >
-      Rishabh is the latest addition to our team. He's joined us full time
-      after an initial period working remotely from India. His knowledge
-      of machine learning has already proved to be a great addition to our
-      team.
+      Rishabh is the most recent addition to our team after he joined us
+      remotely from India. When he's not working he enjoys solving real
+      world machine learning problems with Haskell.
 
-# Build settings
-markdown: kramdown
+collections:
+  jobs:
+    output: true
+    permalink: /job/:path
 

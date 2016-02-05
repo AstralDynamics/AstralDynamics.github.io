@@ -1,9 +1,46 @@
 html {
   font-family: $sans-font;
-  color: $stone-black;
+  color: lighten($black, 5%);
+  font-size: $text-small;
 }
 
+h1, h2, h3 {
+  font-family: $heading-font;
+  font-weight: bold;
+  color: $black;
+}
+
+h1 { font-size: $heading-large; }
+h2 { font-size: $heading-medium; }
+h3 { font-size: $heading-small; }
+
+h4, h5, h6 {
+  font-weight: 200;
+  color: $dark-grey;
+}
+
+h4 { font-size: $subheading-large; }
+h5 { font-size: $subheading-medium; }
+h6 { font-size: $subheading-small; }
+
 a {
-  color: $astral-blue;
+  color: inherit;
+}
+
+p {
+  letter-spacing: 0;
+}
+
+.anchor--unstyled {
+  text-decoration: none;
+}
+
+.writing {
+  font-size: 1.1em;
+  padding: .5em;
+}
+
+.dim {
+  color: $medium-grey;
 }
 

@@ -1,14 +1,34 @@
-$astral-blue: #00509C;
-$slate-blue:  #688294;
-$ghost-grey:  #C0CCD8;
-$stone-black: #1B2F3D;
+$black: #1b1b1b;
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(0, 0%, 96%);
+$medium-grey: hsl(0, 0%, 43%);
+$dark-grey: hsl(0, 0%, 35%);
 
-$huge-space: 4em;
-$large-space: 2em;
-$medium-space: 1em;
-$small-space: .4em;
-$tiny-space: .2em;
+$heading-large: 40pt;
+$heading-medium: 25pt;
+$heading-small: 20pt;
 
-$sans-font: 'Catamaran', sans-serif;
+$subheading-large: 20pt;
+$subheading-medium: 18pt;
+$subheading-small: 15pt;
 
-$content-width: 640px;
+$text-small: 17px;
+$text-medium: 20px;
+$text-large: 32px;
+
+$sans-font: "Catamaran", sans-serif;
+$heading-font: "Alegreya Sans", sans-serif;
+$serif-font: "Alegreya", sans-serif;
+$monospace-font: "Inconsolata-g for Powerline", monospace;
+
+$content-width: 820px;
+$footer-height: 120px;
+
+$base-color: hsl(223, 25%, 35%);
+$palette-one: $base-color;
+$palette-two: darken($palette-one, 15%);
+$palette-three: adjust-hue($base-color, 21);
+$palette-four: darken($palette-three, 15%);
+$palette-five: adjust-hue($base-color, 320);
+$palette-six: lighten($palette-five, 15%);
+

@@ -1,14 +1,29 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<!-- Jekyll Generated Page Title -->
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="{{ "/assets/bundle.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:400,600">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" type="image/png" href="/assets/logo-blue-16.png">
-</head>
+<!-- Jekyll Generated Page Description -->
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<link rel="stylesheet" href="{{ "/assets/bundle.css" | prepend: site.baseurl }}">
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Catamaran:200,700|Alegreya+Sans:400,700" rel="stylesheet" type="text/css">
+
+<!-- Jekyll Handled Canonical Link -->
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+<!-- Disable tap highlight on IE -->
+<meta name="msapplication-tap-highlight" content="no">
+
+<!-- Color the status bar on mobile devices -->
+<meta name="theme-color" content="{{ site.theme_color }}">
+
+<link rel="icon" href="/assets/img/logo-dark-32.png" type="image/png" />
+
+<link rel="canonical" href="http://astraldynamics.co.uk/">
+

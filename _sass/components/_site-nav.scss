@@ -1,31 +1,20 @@
-.site__nav {
-  @include site-width;
-  text-align: left;
-  padding: $medium-space;
-  height: 3em;
-  overflow: hidden;
-}
+.site-nav {
+  word-spacing: 1em;
+  font-size: $text-small;
 
-.site__nav__link,
-.site__nav__link--current {
-  transition-duration: 1s;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $stone-black;
-  border-bottom: solid 2px $ghost-grey;
-  padding-bottom: 2em;
-  margin-right: $small-space;
+  a {
+    text-decoration: none;
+    font-weight: 200;
+  }
 
-  &:hover {
-    transition-duration: .3s;
-    padding-bottom: 0;
-    color: $slate-blue;
+  a:hover {
+    border-bottom: solid 1px $medium-grey;
+    color: $medium-grey;
   }
 }
 
-.site__nav__link--current {
-  height: auto;
-  border-bottom: solid 2px $slate-blue;
-  padding-bottom: 0;
+@media only screen and (max-width: 420px) {
+  .site-header__title {
+    display: none;
+  }
 }

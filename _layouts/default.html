@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
+<html lang='en'>
+  <head>
+    {% include head.html %}
+  </head>
   <body>
-
     {% include header.html %}
-
-    <main class='site__content'>
-        {{ content }}
-    </main>
-
+    <main>{{ content }}</main>
     {% include footer.html %}
-
-    <script id="dsq-count-scr" src="//{{ site.disqus_url }}/count.js" async></script>
     {% include analytics.html %}
   </body>
-
 </html>

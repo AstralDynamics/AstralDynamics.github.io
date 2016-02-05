@@ -1,33 +1,33 @@
 code {
   @include code;
-  padding: 0 $tiny-space;
+  padding: .2em;
 }
 
 .highlight {
   @include code;
-  padding: 0 $medium-space;
-  margin: $medium-space 0;
+  margin: 0;
+  padding: .8em;
+  border-radius: 4px;
+  overflow-x: scroll;
+  text-align: left;
+
+  pre {
+    margin: 0;
+  }
 
   code {
     padding: 0;
-    border: 0;
   }
 }
 
 blockquote {
-  background: #eee;
-  border-left: dashed 3px $ghost-grey;
-  padding: $medium-space;
-  color: $slate-blue;
-
-  p {
-    margin: 0;
-  }
+  margin: 0;
+  font-style: italic;
+  border-left: 4px solid $dark-grey;
+  padding-left: .8em;
 }
 
 .footnotes {
-  margin-top: $large-space;
-  border-top: dashed 2px $ghost-grey;
 }
 
 table {
@@ -35,17 +35,12 @@ table {
 }
 
 tbody, td {
-  border: solid 1px $ghost-grey;
 }
 
 thead, th {
-  border: solid 1px $slate-blue;
-  background: $slate-blue;
-  color: $ghost-grey;
 }
 
 th, td {
-  padding: $small-space;
 }
 
 dl {
@@ -55,4 +50,11 @@ dl {
   dd {
     font-style: italic;
   }
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: solid 2px $light-grey;
+  margin: 1em 0;
 }
