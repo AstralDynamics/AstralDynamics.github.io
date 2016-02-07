@@ -7,19 +7,19 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  line-height: $footer-height;
-  height: $footer-height;
+  min-height: $footer-height;
   width: 100%;
   background: $light-grey;
   color: $medium-grey;
   text-align: center;
+  padding-top: .75em;
 }
 
 .site-footer a {
-  font-weight: bold;
+  color: $dark-grey;
 
   &:hover {
-    color: $dark-grey;
+    color: $medium-grey;
   }
 }
 
