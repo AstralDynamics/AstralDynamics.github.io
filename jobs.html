@@ -4,20 +4,22 @@ title: Jobs
 permalink: /jobs
 ---
 
-<section class='job-list grid'>
+<section class="job-list grid">
   {% for job in site.jobs %}
-    <div class='column column--6'>
-    <h3>{{ job.title }}</h3>
-    <h6>{{ job.type }}</h6>
-    <p>{{ job.intro }}</p>
-    <a href='{{ job.url }}' class='btn btn--small btn--blue'>Learn more</a>
-    <hr />
+    <div class="column column--6">
+      <a href="{{ job.url }}" class="anchor--unstyled">
+        <h3>{{ job.title }}</h3>
+        <h6>{{ job.type }}</h6>
+      </a>
+      <p>{{ job.intro }}</p>
+      <a href="{{ job.url }}">Learn more &raquo;</a>
     </div>
   {% endfor %}
 </section>
 
+<hr />
 <p>
-Not a developer? We're happy to integrate anyone with the right ethos, if you think you'd be a good fit for our team, then please get in touch.
+  Not a developer? We're happy to integrate anyone with the right ethos, if you think you'd be a good fit for our team, then please get in touch.
 </p>
-<button class='btn btn--small btn--green'>Email Us</button>
+<a href="/contact" class="btn btn--small btn--green">Contact Us</a>
 

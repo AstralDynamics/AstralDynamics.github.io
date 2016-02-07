@@ -1,0 +1,103 @@
+---
+layout: page
+title: Apply
+permalink: /apply
+---
+
+<p>
+  Astral Dynamics is not like most workplaces. We're still a small
+  company and at the moment we'd only consider ourselves a home for motivated
+  individuals who are ready for an adventure, not a job.
+</p>
+<p>
+  If this sounds like you, then fill in the application form below and we'll
+  get back to you.
+</p>
+
+<form action="//formspree.io/dan@astraldynamics.co.uk"
+      method="POST"
+      class="grid">
+  <input type="hidden" name="_next" value="/acknowledge" />
+  <!--<input type="hidden" name="_cc" value="liam@astraldynamics.co.uk" />-->
+
+  <div class="column column--6">
+    <label for="position">Position</label>
+    <br />
+    <input
+      type="text"
+      id="position"
+      name="position"
+      placeholder="Frontend Developer" 
+      disabled/>
+  </div>
+
+  <div class="column column--6">
+    <label for="name">Name</label>
+    <br />
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"/>
+  </div>
+
+  <div class="column column--12">
+    <label for="email">Email</label>
+    <br />
+    <input
+      type="email"
+      id="email"
+      name="_replyto"
+      placeholder="you@example.com" />
+  </div>
+
+  <div class="column column--12">
+    <label for="portfolio">Where can we find your work?</label>
+    <br />
+    <input
+      type="url"
+      id="portfolio"
+      name="portfolio"
+      placeholder="https://github.com/yourname" />
+  </div>
+
+  <div class="column column--12">
+    <label for="bio">Let us know something interesting about you!</label>
+    <br />
+    <textarea name="bio" id="bio"></textarea>
+  </div>
+
+  <button class='btn btn--small btn--green'>Apply</button>
+</form>
+
+<script>
+function makeParams(queryString) {
+  var params = {};
+
+  queryString
+    .slice(1)
+    .split('&')
+    .forEach(function(pair) {
+      var kv = pair.split('=');
+      var key = kv[0];
+      var val = kv[1];
+      params[key] = val;
+    });
+
+  return params;
+}
+
+var params = makeParams(document.location.search);
+
+window.addEventListener('load', function() {
+  var positionInput = document.getElementById('position');
+  var position = params.position.replace('+', ' ');
+
+  if(position) {
+    positionInput.value = position;
+  } else {
+    positionInput.removeAttribute('disabled');
+  }
+});
+</script>
+

@@ -4,4 +4,34 @@ title: Contact
 permalink: /contact
 ---
 
-Get in touch at <a href="mailto:contact@astraldynamics.co.uk">contact@astraldynamics.co.uk</a>.
+<div class="grid">
+  <div class="column column--12">
+    You can contact us with the form below, or by sending an email to
+    <a href="mailto:contact@astraldynamics.co.uk">contact@astraldynamics.co.uk</a>
+    <hr />
+  </div>
+</div>
+
+<form action="//formspree.io/dan@astraldynamics.co.uk"
+      method="POST"
+      class="grid">
+
+  <input type="hidden" name="_next" value="/acknowledge" />
+
+  <div class="column column--12">
+    <label for="query">What can we help you with?</label>
+    <br />
+    <textarea id="query" name="query" rows="8" placeholder="Just a few paragraphs to let us know how we can help."></textarea>
+  </div>
+
+  <div class="column column--6">
+    <label for="email">Your Email</label>
+    <br />
+    <input id="email" type="email" name="_replyto" placeholder="you@example.com" />
+  </div>
+
+  <div class="column column--12">
+    <button class="btn btn--small btn--green">Send</button>
+  </div>
+</form>
+

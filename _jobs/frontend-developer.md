@@ -2,6 +2,7 @@
 title: Frontend Developer
 type: Remote
 layout: job
+slug: Frontend+Developer
 intro: Work with our frontend development team to design and build next generation tools and platforms.
 ---
 

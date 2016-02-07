@@ -1,0 +1,13 @@
+{% assign name = include.author %}
+{% assign author = site.data.team[name] %}
+
+{% if author %}
+  <a href="/team#{{ name }}" class="anchor--unstyled">
+    {% if author.image %}
+      <img class="page__image" src="{{ author.image }}"/>
+    {% endif %}
+    <h3>{{ author.name }}</h3>
+  </a>
+  <p>{{ author.bio }}</p>
+{% endif %}
+

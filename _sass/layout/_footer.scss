@@ -1,17 +1,25 @@
 body {
   margin: 0 0 $footer-height;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
 }
 
 .site-footer {
   position: absolute;
   left: 0;
   bottom: 0;
+  line-height: $footer-height;
   height: $footer-height;
   width: 100%;
   background: $light-grey;
   color: $medium-grey;
   text-align: center;
-  padding: 2.5em 1em;
+}
+
+.site-footer a {
+  font-weight: bold;
+
+  &:hover {
+    color: $dark-grey;
+  }
 }
 

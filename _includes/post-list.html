@@ -1,7 +1,6 @@
 <section class="post-list">
-  <br />
   {% for post in site.posts %}
-    <div class="post-preview">
+    <div class="post-preview" data-author="{{ post.author }}">
       <a href="{{ post.url }}" class="anchor--unstyled">
         <h2 class="post-preview__title">{{ post.title }}</h2>
       </a>
@@ -17,4 +16,10 @@
     </div>
     <hr />
   {% endfor %}
+
+  {% if site.posts == empty %}
+  <center>
+    <p>We haven't written any blog posts yet!</p>
+  </center>
+  {% endif %}
 </section>

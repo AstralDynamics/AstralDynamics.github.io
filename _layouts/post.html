@@ -13,8 +13,8 @@ layout: default
     {% if page.image %}
       <img class="page__image" src="{{ page.image }}" alt="Title image" />
     {% else %}
-      {% if page.author and site.team[page.author] and site.team[page.author].image %}
-        <img class="page__image" src="{{ site.team[page.author].image }}"/>
+      {% if page.author and site.data.team[page.author] and site.data.team[page.author].image %}
+        <img class="page__image" src="{{ site.data.team[page.author].image }}"/>
       {% else %}
         <div class="page__image"></div>
       {% endif %}
@@ -27,13 +27,6 @@ layout: default
   </section>
   <footer class="page__footer">
     <hr />
-    {% if page.author %}
-      {% assign author = site.team[post.author] %}
-      {% if page.author and site.team[page.author] and site.team[page.author].image %}
-        <img class="page__image" src="{{ site.team[page.author].image }}"/>
-      {% endif %}
-      <h3>{{ author.name }}</h3>
-      <p>{{ author.bio }}</p>
-    {% endif %}
+    {% include author.html author=page.author %}
   </footer>
 </article>

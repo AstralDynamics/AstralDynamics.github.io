@@ -1,0 +1,32 @@
+liam:
+  name: Liam Kurmos
+  display_name: Liam
+  role: CEO / Founder
+  image: http://i.imgur.com/cbPUOWM.jpg?1
+  twitter: liamkurmos
+  linkedin: https://uk.linkedin.com/in/liamkurmos 
+  bio: >
+    Liam is the founder and visionary of Astral Dynamics. Outside of work
+    he loves tackling societal and environmental challenges; doing whatever
+    he can to improve the big picture.
+
+dan:
+  name: Dan Prince
+  display_name: Dan
+  role: CTO / Founder
+  image: http://i.imgur.com/q1EsUYL.jpg?1
+  twitter: workshydev
+  bio: >
+    Dan is a creative fullstack engineer and a co-founder of Astral Dynamics.
+    When he's not at a computer you're likely to find him playing guitar,
+    juggling or riding a longboard.
+
+rishabh:
+  name: Rishabh Jain
+  display_name: Rishabh
+  role: Developer
+  github: rishabhjain
+  bio: >
+    Rishabh is the most recent addition to our team after he joined us
+    remotely from India. When he's not working he enjoys solving real
+    world machine learning problems with Haskell.

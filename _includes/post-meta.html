@@ -1,12 +1,12 @@
-<span class='post-meta'>
+<span class="post-meta">
   {% assign post = include.post %}
 
   {% if post.author %}
-    {% assign author = site.team[post.author] %}
-    <span class='dim'>By</span>
-    <a href=''>{{ author.name }}</a>
+    {% assign author = site.data.team[post.author] %}
+    <span class="dim">By</span>
+    <a href="/team#{{ post.author }}">{{ author.name }}</a>
+    <span class="dim">on</span>
   {% endif %}
-  <span class='dim'>on</span>
   <time>{{ post.date | date: "%b %d, %Y" }}</time>
 </span>
 

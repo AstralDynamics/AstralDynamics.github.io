@@ -1,9 +1,9 @@
 <section class="team-list grid">
-  {% for entry in site.team %}
+  {% for entry in site.data.team %}
     {% assign name = entry[0] %}
     {% assign person = entry[1] %}
 
-    <div class="column column--6 team-member">
+    <div class="column column--6 team-member" id="{{ name }}">
       <header class="team-member__header">
         {% if person.image %}
           <img class="team-member__thumbnail" src="{{ person.image }}" />
