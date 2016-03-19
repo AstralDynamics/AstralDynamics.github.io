@@ -16,9 +16,9 @@ markdown: kramdown
 sass:
   style: compressed
 collections:
-  portfolio:
+  projects:
     output: true
-    permalink: /showcase/:path
+    permalink: /project/:path
   jobs:
     output: true
     permalink: /job/:path

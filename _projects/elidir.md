@@ -2,6 +2,7 @@
 layout: post
 title: Elidir Health
 image: /assets/img/elidir.png
+published: true
 intro: >
   Elidir Health is a dedicated team—spun-out from Astral Dynamics—focusing on improving health care with digital solutions.
 ---

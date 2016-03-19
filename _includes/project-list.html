@@ -1,19 +1,21 @@
 <section class="team-list grid">
   {% for project in site.projects %}
-    <div class="column column--6 team-member" id="{{ project.title }}">
-      <header class="team-member__header">
-        <a href="{{ project.url }}" class="anchor--unstyled">
-          {% if project.image. %}
-            <img class="team-member__thumbnail" src="{{ project.image }}" />
-          {% else %}
-            <div class="team-member__thumbnail"></div>
-          {% endif %}
-          <h2>{{ project.title }}</h2>
-        </a>
-      </header>
-      <br />
-      <p class="team-member__bio">{{ project.intro }}</p>
-      <a href="{{ project.url }}">Read More &raquo;</a>
-    </div>
+    {% if project.published %}
+      <div class="column column--6 team-member" id="{{ project.title }}">
+        <header class="team-member__header">
+          <a href="{{ project.url }}" class="anchor--unstyled">
+            {% if project.image. %}
+              <img class="team-member__thumbnail" src="{{ project.image }}" />
+            {% else %}
+              <div class="team-member__thumbnail"></div>
+            {% endif %}
+            <h2>{{ project.title }}</h2>
+          </a>
+        </header>
+        <br />
+        <p class="team-member__bio">{{ project.intro }}</p>
+        <a href="{{ project.url }}">Read More &raquo;</a>
+      </div>
+    {% endif %}
   {% endfor %}
 </section>
