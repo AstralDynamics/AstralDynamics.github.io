@@ -1,5 +1,5 @@
 <section class="team-list grid">
-  {% for project in site.projects %}
+  {% for project in site.projects reversed %}
     {% if project.published %}
       <div class="column column--6 team-member" id="{{ project.title }}">
         <header class="team-member__header">

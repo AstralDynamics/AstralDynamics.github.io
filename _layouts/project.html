@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="page">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@theastralship" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords:25 }}" />
+  <meta name="twitter:image" content="{{ page.image }}" />
+
+  <header class="page__header">
+    {% if page.image %}
+      <img class="page__image" src="{{ page.image }}" alt="Title image" />
+    {% else %}
+      {% if page.author and site.data.team[page.author] and site.data.team[page.author].image %}
+        <img class="page__image" src="{{ site.data.team[page.author].image }}"/>
+      {% else %}
+        <div class="page__image"></div>
+      {% endif %}
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% include post-meta.html post=page %}
+  </header>
+  <section class="page__content writing">
+    {{ content }}
+  </section>
+  <footer class="page__footer">
+    <hr />
+    <a href="/projects">&laquo; Back to Projects</a>
+  </footer>
+</article>

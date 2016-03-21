@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: project
 title: Elidir Health
 image: /assets/img/elidir.png
 date: 2015-09-25
 published: true
 intro: >
-  Elidir Health is a dedicated team—spun-out from Astral Dynamics—focusing on improving health care with digital solutions.
+  Elidir Health is a dedicated spin-out from Astral Dynamics, who are focusing on improving health care with digital solutions.
 ---
 
 In 2014 we entered a Small Business Research Initiative (SBRI) competition with Betsi Cadwaladr University Health Board (BCUHB). We were tasked with saving 10% of nurses administrative time, so that they could spend more of their day at the bedside with patients.
