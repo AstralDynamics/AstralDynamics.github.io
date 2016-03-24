@@ -2,6 +2,7 @@
 layout: project
 title: ACTE
 date: 2015-08-10
+image: /assets/img/acte.png
 published: true
 intro: >
   We worked with the Association of Corporate Travel Executives to create a visualisation tool for analysis of their conference data.
