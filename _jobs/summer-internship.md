@@ -1,8 +1,8 @@
 ---
-title: Junior Developer
+title: Summer Internship
 type: Onsite
 layout: job
-slug: Junior+Developer
+slug: Summer+Internship
 intro: Spend a summer working with our developers, building products and learning to use a modern web stack.
 ---
 
