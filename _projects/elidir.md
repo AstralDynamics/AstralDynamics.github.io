@@ -14,6 +14,6 @@ We quickly got a picture of some of the pain points facing staff on the front li
 
 Our idea was idea was one of five to go forward to a feasibility study. For 4 months the team worked hard. We immersed ourselves in learning about the secondary care environment, listening to and observing staff at work then breaking out to creative brainstorming sessions back at the chapel. We were successful and in November 2014 awarded an additional £400,000 to run a pilot. Astral Dynamics used this funding to pull together a dedicated team to work on and deliver the product and manage the pilot. In September 2015 a new spinout entity Elidir Health Ltd was created and officially took over deliver of the pilot, leaving the founding Astral Dynamics team free to continue exploring innovation on this and other projects.
 
-So far the pilot has been well received and we’re excited to see our vision turning into reality. Elidir Health are carrying on the work with BCUHB in North Wales and continue to work at the cutting edge of what’s possible with mobile application development. They’re looking for talented frontend developers, if you’re interested see [their website][1] for more details.
+So far the pilot has been well received and we’re excited to see our vision turning into reality. Elidir Health are carrying on the work with BCUHB in North Wales and continue to work at the cutting edge of what’s possible with mobile application development. 
 
 [1]: https://elidirhealth.co.uk
