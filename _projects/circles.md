@@ -22,3 +22,4 @@ In parallel with this technology we are developing a training programme which em
 </p>
 
 [1]: http://cirles.care
+[2]: http://gatherings.voyage
