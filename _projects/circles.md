@@ -5,7 +5,8 @@ image: /assets/img/circles-icon.png
 date: 2020-11-28
 published: true
 intro: >
-[Care Circles][1] is a web-video platform for  supportive group conversations. 
+In March 2020 we took part in the [Gathering.voyage][2] an accelerator for ideas developing new ways of meaningfully gathering online. We came up with
+[Care Circles][1], a web-video platform for  supportive group conversations. 
 ---
 <p>
 Local communities have eroded causing social isolation and Covid restrictions have added to the strain on mental health. Often, an empathetic ear, and a safe space to share makes a huge difference and a little early community support can prevent a crisis, easing the load on professional services.
@@ -19,7 +20,5 @@ To enhance human connection online we need appropriately designed spaces. Care C
 <p>
 In parallel with this technology we are developing a training programme which empowers any mature youth or adult to host an online support circle.
 </p>
----
-
 
 [1]: http://cirles.care
